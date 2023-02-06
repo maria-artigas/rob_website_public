@@ -1,0 +1,42 @@
+/* include me in the SVG, please:
+ * <?xml-stylesheet href="overview.css" type="text/css"?>
+ * thanks!
+ */
+
+/* DEFAULT SETTINGS */
+/* blocks */
+#fundamental_1, #fundamental_2, #fundamental_3, #fundamental_4, #fundamental_5, #methodology_1,
+#methodology_2, #methodology_3, #methodology_4,
+#application_1, #application_2, #application_3 {
+  display: block;
+  opacity: 0.65;
+}
+/* hovering blocks */
+#fundamental_1:hover, #fundamental_2:hover, #fundamental_3:hover, #fundamental_4:hover, #fundamental_5:hover,
+#methodology_1:hover, #methodology_2:hover, #methodology_3:hover,
+#methodology_4:hover, #application_1:hover,
+#application_2:hover, #application_3:hover {
+  opacity: 1.0;
+  transition: opacity .15s ease-in-out;
+  -o-transition: opacity .15s ease-in-out;
+  -moz-transition: opacity .15s ease-in-out;
+  -webkit-transition: opacity .15s ease-in-out;
+}
+
+/* HOVER EFFECTS */
+/* hovering fundamentals group reveals its blocks */
+#fundamentals:hover #fundamental_1 { display: block; }
+#fundamentals:hover #fundamental_2 { display: block; }
+#fundamentals:hover #fundamental_3 { display: block; }
+#fundamentals:hover #fundamental_4 { display: block; }
+#fundamentals:hover #fundamental_5 { display: block; }
+/* hovering methodologies group reveals its blocks */
+#methodologies:hover #methodology_1 { display: block; }
+#methodologies:hover #methodology_2 { display: block; }
+#methodologies:hover #methodology_3 { display: block; }
+#methodologies:hover #methodology_4 { display: block; }
+
+/* hovering applications group reveals its blocks */
+#applications:hover #application_1 { display: block; }
+#applications:hover #application_2 { display: block; }
+#applications:hover #application_3 { display: block; }
